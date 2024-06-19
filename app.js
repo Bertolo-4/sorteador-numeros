@@ -15,4 +15,13 @@ function sortear() {
        sorteados.push(num); 
     }
 
+    let resultado = document.getElementById("resultado"); 
+    resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados:  ${sorteados}</label>`;
+    
+    alterarStatudsBotao();
 }
+function gerarNumAleatorio(min, max) {
+
+    return Math.floor(Math.random()* (max-min +1)) + min; 
+}
+
