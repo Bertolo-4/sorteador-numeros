@@ -25,3 +25,16 @@ function gerarNumAleatorio(min, max) {
     return Math.floor(Math.random()* (max-min +1)) + min; 
 }
 
+function alterarStatudsBotao() {
+    let btn = document.getElementById("btn-reiniciar"); 
+        
+    if(btn.classList.contains('container__botao-desabilitado')) {
+            
+            btn.classList.remove('container__botao-desabilitado');
+            btn.classList.add('container__botao');
+        }else{
+            btn.classList.remove('container__botao');
+            btn.classList.add('container__botao-desabilitado');
+        }
+}
+
