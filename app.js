@@ -10,6 +10,8 @@ function sortear() {
       
         while (sorteados.includes(num)) {
           num = gerarNumAleatorio(de, ate); 
+          alert('Tentando obter número inédito');
+
        }
       
        sorteados.push(num); 
